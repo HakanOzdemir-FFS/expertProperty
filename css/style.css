@@ -553,6 +553,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -745,6 +749,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(6rem * var(--tw-space-x-reverse));
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-32 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(8rem * var(--tw-space-x-reverse));
+  margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1076,6 +1086,42 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:space-x-64 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(16rem * var(--tw-space-x-reverse));
+    margin-left: calc(16rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-96 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(24rem * var(--tw-space-x-reverse));
+    margin-left: calc(24rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-\[100rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(100rem * var(--tw-space-x-reverse));
+    margin-left: calc(100rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-\[50rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(50rem * var(--tw-space-x-reverse));
+    margin-left: calc(50rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-\[56rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(56rem * var(--tw-space-x-reverse));
+    margin-left: calc(56rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-\[45rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(45rem * var(--tw-space-x-reverse));
+    margin-left: calc(45rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1085,6 +1131,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1200px) {
   .lg\:visible {
     visibility: visible;
+  }
+
+  .lg\:invisible {
+    visibility: hidden;
   }
 
   .lg\:mx-5 {
@@ -1103,6 +1153,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mr-96 {
+    margin-right: 24rem;
   }
 
   .lg\:block {
@@ -1137,6 +1191,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: center;
   }
 
+  .lg\:items-stretch {
+    align-items: stretch;
+  }
+
   .lg\:justify-center {
     justify-content: center;
   }
@@ -1158,6 +1216,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(16rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-\[45rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(45rem * var(--tw-space-x-reverse));
+    margin-left: calc(45rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:pl-\[10\%\] {
     padding-left: 10%;
   }
@@ -1165,6 +1229,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mr-96 {
+    margin-right: 24rem;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:items-stretch {
+    align-items: stretch;
   }
 }
 
@@ -1179,6 +1261,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:hidden {
     display: none;
+  }
+
+  .\32xl\:w-\[550px\] {
+    width: 550px;
   }
 
   .\32xl\:flex-col {

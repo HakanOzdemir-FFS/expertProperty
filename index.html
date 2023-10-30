@@ -110,7 +110,7 @@
             src="img/Group 8.svg"
             alt="logo-2"
           />
-          <div class="swiper-container relative w-full h-full overflow-hidden">
+          <div class="swiper-container w-full h-full overflow-hidden">
             <div class="swiper-wrapper w-full h-full">
               <div class="swiper-slide">
                 <section class="w-full h-52 flex flex-col pt-10">
@@ -127,7 +127,23 @@
                     Projelerinde Yerini Al!
                   </h3>
                 </section>
-                <img class="w-full h-full" src="img/Slider.png" alt="slider" />
+                <div class="relative">
+                  <img
+                    class="w-full h-full"
+                    src="img/Slider.png"
+                    alt="slider"
+                  />
+                  <img
+                    class="prev-button rotate-180 w-10 opacity-50 absolute bottom-[50%] left-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                  <img
+                    class="next-button w-10 opacity-50 absolute bottom-[50%] right-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="swiper-slide">
                 <section class="w-full h-52 flex flex-col pt-10">
@@ -144,7 +160,23 @@
                     Projelerinde Yerini Al!
                   </h3>
                 </section>
-                <img class="w-full h-full" src="img/Slider.png" alt="slider" />
+                <div class="relative">
+                  <img
+                    class="w-full h-full"
+                    src="img/Slider.png"
+                    alt="slider"
+                  />
+                  <img
+                    class="prev-button rotate-180 w-10 opacity-50 absolute bottom-[50%] left-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                  <img
+                    class="next-button w-10 opacity-50 absolute bottom-[50%] right-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="swiper-slide">
                 <section class="w-full h-52 flex flex-col pt-10">
@@ -161,11 +193,26 @@
                     Projelerinde Yerini Al!
                   </h3>
                 </section>
-                <img class="w-full h-full" src="img/Slider.png" alt="slider" />
+                <div class="relative">
+                  <img
+                    class="w-full h-full"
+                    src="img/Slider.png"
+                    alt="slider"
+                  />
+                  <img
+                    class="prev-button rotate-180 w-10 opacity-50 absolute bottom-[50%] left-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                  <img
+                    class="next-button w-10 opacity-50 absolute bottom-[50%] right-0"
+                    src="img/right-arrow (1).svg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-            <img class="rotate-180 w-10 opacity-50 absolute bottom-40 left-0" src="img/right-arrow (1).svg" alt="">
-            <img class="w-10 opacity-50 absolute bottom-40 right-0" src="img/right-arrow (1).svg" alt="">
+
             <div class="swiper-pagination cursor-pointer"></div>
           </div>
         </section>
@@ -624,8 +671,8 @@
         el: ".swiper-pagination",
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".next-button",
+        prevEl: ".prev-button",
       },
       autoplay: {
         delay: 2500,

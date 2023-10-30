@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 10rem;
 }
 
+.bottom-\[50\%\] {
+  bottom: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
